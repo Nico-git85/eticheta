@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <title>Tema 1</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      div,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Roboto";
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        width: 52mm;
+        height: 37mm;
+        background: #ffc0cb;
+        margin: 15px;
+        border-radius: 15px;
+        border-style: outset;
+        box-shadow: 0 4px 8px 0 #dba3d4, 0 6px 20px 0 #9e9e9e;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      "
+    >
+      <p id="materie"></p>
+      <p id="tip"></p>
+      <p id="loc"></p>
+      <p id="spatiu"></p>
+    </div>
+    <script>
+      "use strict";
+
+      let alegere = "Statistica";
+      let model = "schita";
+
+      const materie = document.querySelector("#materie");
+      materie.style.fontSize = "13px";
+      materie.style.fontWeight = "bold";
+      materie.style.color = "#444";
+      materie.style.textShadow = "0.6px 1px";
+      materie.innerHTML = "Eticheta Materie :";
+      const tip = document.querySelector("#tip");
+      tip.style.fontSize = "11px";
+      tip.style.color = "#FF1493";
+      tip.style.fontStyle = "italic";
+      tip.innerHTML = alegere;
+      const loc = document.querySelector("#loc");
+      loc.style.fontSize = "13px";
+      loc.style.fontWeight = "bold";
+      loc.style.color = "#444";
+      loc.style.textShadow = "0.6px 1px";
+      loc.innerHTML = "Tipologie caiet :";
+      const spatiu = document.querySelector("#spatiu");
+      spatiu.style.fontSize = "11px";
+      spatiu.style.color = "#FF1493";
+      spatiu.style.fontStyle = "italic";
+      spatiu.innerHTML = model;
+    </script>
+  </body>
+</html>
